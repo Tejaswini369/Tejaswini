@@ -120,4 +120,133 @@
                         <h2>Machine Learning Engineer</h2>
                         <div class="service-description">
                             <p style="line-height: 1.6;">1. Optimized ETL pipelines in healthcare and finance sectors using TensorFlow, Decision Trees, and Random Forests, boosting user engagement by 15% and operational efficiency by 10%.</p>
-                            <p style="line-height: 1.6;">
+                            <p style="line-height: 1.6;">2. Utilized AWS services (EC2, S3, SageMaker, Glue, Lambda, Redshift) to reduce data processing time and operational costs by 30%.</p>
+                            <p style="line-height: 1.6;">3. Automated microservices deployment through CI/CD pipeline integration, achieving an 84% increase in efficiency and an 80% reduction in manual data preprocessing using MLflow.</p>
+                            <p style="line-height: 1.6;">4. Leveraged Docker, Kubernetes, and Git to streamline workflows, implementing automated data quality checks with Spark.</p>
+                            <p style="line-height: 1.6;">5. Mentored a team in deploying convolutional neural networks (CNNs) for detailed image analysis and natural language processing (NLP) for data pattern recognition, achieving a 12% reduction in discrepancies. Collaborated closely with cross-functional teams and stakeholders to design robust data models and develop complex SQL queries.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-industry"></i>
+                        <h1>Activa Inc.</h1>
+                        <h2>AI Research Intern</h2>
+                        <div class="service-description">
+                            <p style="line-height: 1.6;">1. Developed and deployed machine learning algorithms for autonomous robots equipped with 2-D and 3-D Lidars for point cloud mapping and object recognition, leading to a 15% increase in the effectiveness of factory planning and reconstruction projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!---------------------------projects--------------------------------------------------->
+        <div id="project">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <div class="text-content">
+                            <h3>Resume Parser and Job Recommendation System</h3>
+                            <p>Developed a resume parser with a Flask-based API, enabling users to upload resumes and automatically extract key skills, provide job recommendations, and categorize job industries (finance, healthcare, IT) using a random forest model with 95% accuracy. Trained the system on a dataset of 25,000 resumes, achieving high accuracy in skill extraction and job classification, enhancing job search efficiency for users.</p>
+                        </div>
+                        <img src="images/resume-parser.jpg" class="project-img">
+                    </div>
+                    <div class="work">
+                        <div class="text-content">
+                            <h3>Waze User Churn Prediction</h3>
+                            <p>Developed a Flask-based web application for Waze to predict customer churn with 93% accuracy. Performed predictive analytics enabling dynamic user interaction, refining data-driven strategic decision-making, such as personalized retention offers or identifying the right time to engage with customers to prevent churn.</p>
+                        </div>
+                        <img src="images/churn-prediction.jpg" class="project-img">
+                    </div>
+                    <div class="work">
+                        <div class="text-content">
+                            <h3>Authorship Attribution for Neural Text Generation</h3>
+                            <p>Employed Bi-LSTM and Stacked CNN models to distinguish between AI-generated text and human-authored text, boosting fraud prevention, resulting in an F-1 score of 1. Performed web scraping using Python to gather AI text from GPT-3 and Instruct GPT.</p>
+                        </div>
+                        <img src="images/authorship-attribution.jpg" class="project-img">
+                    </div>
+                    <div class="work">
+                        <div class="text-content">
+                            <h3>Drowsiness Detection with OpenCV and Keras</h3>
+                            <p>Devised a CNN-based drowsiness detection method trained on a diverse dataset of over 10,000 drivers, leading to a 95% detection accuracy rate. Utilized OpenCV's face detection and landmarks to avoid accidents by triggering alarms.</p>
+                        </div>
+                        <img src="images/drowsiness-detection.jpg" class="project-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!------------------------Contact------------------------------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><a href="mailto:tejaswini@buffalo.edu" class="email-link"><i class="fa-solid fa-envelope"></i></a>: tejaswini@buffalo.edu</p>
+                        <p><a href="tel:+1234567890" class="phone-link"><i class="fa-solid fa-phone"></i></a>: +1 (234) 567-890</p>
+                        <p>Alternate <a href="mailto:tejaswini.personal@gmail.com" class="email-link"><i class="fa-solid fa-envelope"></i></a>: tejaswini.personal@gmail.com</p>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="thankyou">
+                <p>Please feel free to contact me with any questions or for further information.</p>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+<!-------------------script for about------------------------------------- -->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+            var sidemenu = document.getElementById("sidemenu")
+
+            function openmenu(){
+                sidemenu.style.right = 0;
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+            function openmenu() {
+                document.getElementById("sidemenu").classList.add("open");
+            }
+
+            function closemenu() {
+                document.getElementById("sidemenu").classList.remove("open");
+            }
+            
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwgceM8ENgMnYUNZX9JS8_M8a3FONMuJEPkTLRxAPuEPpxY0wT25rvyjK5LD6UIyMPlfw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML= ""
+                    },5000)
+                    form.reset() 
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
